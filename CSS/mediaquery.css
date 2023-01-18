@@ -43,4 +43,16 @@
         font-size: 18px;
     }
 
+
+        /* FOOTER */
+
+    footer .column1{
+        flex-direction: column;
+    }
+
+    footer .adress{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
 }
