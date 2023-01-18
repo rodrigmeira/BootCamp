@@ -13,7 +13,7 @@ body
 {
     margin: 0px; /* Margem Externa */
     padding: 0px; /* Margem Interna */
-    background: linear-gradient(to bottom, #0c70f2, rgb(49, 49, 49)), #303030;
+    background: linear-gradient(to bottom, #0c70f2, rgb(49, 49, 49) 50%), #303030;
     background-repeat: no-repeat;
 }
 
@@ -189,4 +189,110 @@ form
     input[type="submit"]:hover{
        transition: 0.75s;
        background-color: #5b9bee;
+    }
+
+/* FOOTER */
+
+footer
+{
+    width: 100%;
+    background-color: var(--azul-dnc);
+}
+
+footer .column1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 330px;
+    }
+
+    footer h5{
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        font-size: 18px;
+        font-family: var(--main-font);
+
+        background-color: var(--preto-dnc);
+        border-radius: 10px;
+
+        padding: 12px 12px 12px 12px;
+        margin-bottom: 5px;
+    }
+
+footer ul li
+{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--main-font);
+
+    margin: 20px 0px 20px 0px;
+}
+
+footer ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    transition: .75s;
+}
+
+    footer ul li a:hover{
+        color: var(--cinza-hover);
+        transition: .75s;
+    }
+
+footer .adress
+{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--main-font);
+    color: #fff;
+    text-align: center;
+    width: 20%;
+}
+
+footer .column2
+{
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+footer .column2 a
+{
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    transition: .75s;
+}
+
+    footer .column2 a:first-child{
+        border-right: 4px solid #fff;
+    }
+
+    footer .column2 a:hover{
+        color: var(--cinza-hover);
+        transition: .75s;
     }
